@@ -99,47 +99,6 @@ char *s21_strtok(char *str, const char *delim) {
     return returnvalue;
 }
 
-
-// char *s21_strtok(char *s, char *delim) {
-//     static char *p;
-//     if (!s) {
-//         s = p;
-//     }
-//     char *returnvalue;
-//     int flag = 0;
-//     if (!s) {
-//         return NULL;
-//     }
-
-//     while (flag == 0) {
-//         if (is_delim(*s, delim)) {
-//             s++;
-//         } else if (*s == '\0') {
-//             return NULL;
-//         } else {
-//             flag = 1;
-//         }
-//     }
-//     char *ret = s;
-//     flag = 0;
-//     while (flag == 0) {
-//         if (*s == '\0') {
-//             p = s;
-//             returnvalue = ret;
-//             flag = 1;
-//         }
-//         if (is_delim(*s, delim)) {
-//             *s = '\0';
-//             p = s + 1;
-//             returnvalue = ret;
-//             flag = 1;
-//         }
-//         s++;
-//     }
-//     return returnvalue;
-// }
-
-
 // void test_strpbrk(int n) {
 //     char str1[] = "This is a sample string";
 //     char str2[] = "aeiou";
